@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Чат</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet"></head>
+<body>
+    <div class="wrapper">
+        <div class="authorize" style="display:block;">
+            <div class="authorize__content">
+                <div class="authorize__picture">
+                    <div class="authorize__img"></div>
+                </div>
+                <div class="authorize__header">Авторизация</div>
+                <div class="authorize__description">Введите пожалуйста своё фио и ник для дальнейшей авторизации</div>
+                <form class="authorize__form" method="post">
+                    <input type="text" class="authorize__input" name="name" required placeholder="Введите свое имя">
+                    <input type="text" class="authorize__input" name="nik" required placeholder="Введите свой ник">
+                    <button type="submit" class="authorize__button">Войти</button>
+                </form>
+            </div>
+        </div>        <div class="chat" style="display:none;">
+            <div class="chat__header">
+                <div class="chat__controls">
+                    <div class="chat__open"></div>
+                    <div class="chat__close"></div>
+                </div>
+            </div>
+            <div class="chat__body">
+                <div class="chat__left">
+                    <div class="chat__search">
+                        <div class="hamburger"></div>
+                        <input class="chat__input" type="search" name="" id="" placeholder="Найти...">
+                    </div>
+                    <div class="chat__list">
+                    </div>
+                </div>
+                <div class="chat__right">
+                    <div class="chat__title">
+                        <div class="chat__chat">Чат</div>
+                        <div class="chat__count"><span class="chat__number">0</span> участника</div>
+                    </div>
+                    <div class="chat__window">
+                    </div>
+                    <form class="message" method="post">
+                        <input class="message__field" name="message" required placeholder="Введите сообщение...">
+                        <button class="message__send">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>        <div class="uploadPhoto" style="display:none;">
+           <div class="uploadPhoto__header">Загрузка фото</div>
+           <div class="uploadPhoto__content">
+               <div class="uploadPhoto__upload"></div>
+               <input type='file' id="upload" />
+              <img src="#" id="upload-img" alt="image" />
+               <div class="uploadPhoto__description">
+                   <div class="uploadPhoto__name">Пользователь</div>
+                   <div class="uploadPhoto__status">онлайн</div>
+               </div>
+           </div>
+        </div>    </div>
+<script type="text/javascript" src="index.1845b9944245c341917d.js"></script></body>
+</html>
